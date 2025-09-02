@@ -1,0 +1,19 @@
+****************
+CS:APP Proxy Lab
+****************
+
+Makefile	- For building proxy
+README		- This file
+
+# Proxy source files
+proxy.{c,h}	- Primary proxy code
+csapp.{c,h}	- Wrapper and helper functions from the CS:APP text
+
+1. Run Makefile: make
+2. Run the proxy in PROCESS MODE: ./proxy <port>
+3. Run the proxy in THREAD MODE: ./proxy <port>
+4. In new terminal run: curl -x localhost:15213 http://example.com
+5. To test HTTP Tunneling, run curl -x localhost:15213 https://www.google.com -k
+6. TO test Persistant Connections, run: curl -x localhost:15213 http://example.com --header "Connection: keep-alive"
+
+
